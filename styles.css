@@ -5,7 +5,7 @@
 }
 
 html{
-    font-size: 13px;
+    font-size: 14px;
  }  
 
 :root{
@@ -63,7 +63,7 @@ nav{
     display: flex;
     align-items: center;
     gap: 2rem;
-    height: 3.05rem;
+    height: 4rem;
 }
 
 nav ul{
@@ -867,6 +867,9 @@ font-weight: bold;
     html{
         font-size: 16px;
      }  
+     nav{
+        height: 3.05rem;
+    }
      .hero_box{
         height: 85vh;
      }
