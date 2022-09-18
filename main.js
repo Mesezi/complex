@@ -87,7 +87,7 @@ heroSection.addEventListener('mouseenter', ()=>{
 heroSection.addEventListener('mouseleave', ()=>{
     interval = setInterval(() => {
   nextCarousel()
-    }, 3000); 
+    }, 4000); 
 })
     
 
@@ -121,3 +121,13 @@ products[1].classList.add('active_products')
 recentFirstPage.classList.remove('active')
 recentSecondPage.classList.add('active')
 })
+
+
+
+// let range = document.getElementById('points')
+// let rangeText = document.getElementById('test')
+
+// range.addEventListener('change', ()=>{
+//     console.log('works')
+//     rangeText.innerText = range.value
+// })

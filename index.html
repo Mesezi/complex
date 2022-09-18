@@ -9,6 +9,7 @@
 <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <script src="https://kit.fontawesome.com/e96215e590.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <link rel="stylesheet" href="styles.css">
     <title>Document</title>
 </head>
@@ -124,7 +125,10 @@
                   <p>PRICE FROM</p>
                   <i class="fa-solid fa-chevron-down"></i>
                  </div>
-              
+                 <!--
+                 <input type="range" id="points" name="points" min="0" max="100">
+                 <p id="test" class="text-white"></p> -->
+
                  <div class="price_range">
                   <p>TO</p>
                   <i class="fa-solid fa-chevron-down"></i>
@@ -254,26 +258,31 @@
     <main> 
         <div>
         <article class="see_properties">
-            <div>
-                <p data-aos="fade-up"
-                data-aos-duration="3000">See Our Properties</p>
+            <div data-aos="fade-left"
+            data-aos-duration="1500">
+                <p >See Our Properties</p>
                 <i class="fa-solid fa-arrow-right"></i>
             </div>
         </article>
-<div class="d-block d-lg-none mobile_our_service_image">
+<div class="d-block d-lg-none mobile_our_service_image" data-aos="fade-left"
+data-aos-duration="1500">
     <div>
-        <h2 class="m-0"> <span> Common <br class="d-none d-lg-inline-block"> Sense</span> <br> Real Estate management</h2>
+        <h2 class="m-0" data-aos="fade-up"
+        data-aos-duration="1500"> <span> Common <br class="d-none d-lg-inline-block"> Sense</span> <br> Real Estate management</h2>
     </div>
     <img class="" src="https://images.unsplash.com/photo-1601534621851-c19ba5464244?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8N3x8dG93ZXJ8ZW58MHx8MHx8&w=1000&q=80" alt="">
 </div>
 
        
-        <article class="our_service">
+        <article class="our_service" data-aos="fade-left"
+        data-aos-duration="1500">
            
             <div>
 
-                <div class="service_description">
-                   <div class="d-none d-lg-flex"><h2 class="m-0"> <span> Common <br class="d-none d-lg-inline-block"> Sense</span> <br> Real Estate management</h2></div> 
+                <div class="service_description" data-aos="fade-right"
+                data-aos-duration="1200">
+                   <div class="d-none d-lg-flex"><h2 class="m-0" data-aos="fade-up"
+                    data-aos-duration="1500"> <span> Common <br class="d-none d-lg-inline-block"> Sense</span> <br> Real Estate management</h2></div> 
                    <div>
                     <h4>We take a common sense approach to everything we do</h4>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores provident
@@ -281,13 +290,15 @@
                 </div>
 
                 <div class="managed">
-                    <p>Our Service</p>
-                    <p>2,700,000</p>
+                    <p data-aos="fade-left"
+                    data-aos-duration="1500">Our Service</p>
+                   <div><p>2,700,000</p></div> 
                 </div>
 
                 <div class="services_cards">
 
-                    <div>
+                    <div data-aos="fade-right"
+                    data-aos-duration="1500">
                        <div><span>01</span></div> 
                         <h3 class="m-0">Service</h3>
                         <p>Lorem ipsum, dolor sit amet consectetur 
@@ -295,7 +306,8 @@
                             </p>
                     </div>
 
-                    <div>
+                    <div data-aos="fade-right"
+                    data-aos-duration="1500">
                         <div><span>02</span></div> 
                          <h3 class="m-0">Service</h3>
                          <p>Lorem ipsum, dolor sit amet consectetur 
@@ -303,7 +315,8 @@
                              </p>
                      </div>
 
-                     <div>
+                     <div data-aos="fade-right"
+                     data-aos-duration="1500">
                         <div><span>03</span></div> 
                          <h3 class="m-0">Service</h3>
                          <p>Lorem ipsum, dolor sit amet consectetur 
@@ -313,7 +326,8 @@
                      </div>
 
                     <article> 
-                        <div>
+                        <div data-aos="fade-left"
+                        data-aos-duration="1500">
                         <p>Visit Service</p>
                         <i class="fa-solid fa-arrow-right"></i>
                     </div></article>
@@ -323,41 +337,52 @@
             </div>
         </article>
 
-        <article class="reasons">
-            <div> <h3 class="m-0">6 REASONS <br> WHY WE'RE SPECIAL!</h3></div>
+        <article class="reasons"  data-aos="fade-in"
+        data-aos-duration="500">
+            <div> <h3 class="m-0" data-aos="fade-up"
+                data-aos-duration="1500">6 REASONS <br> WHY WE'RE SPECIAL!</h3></div>
                <div>
-                <p><i class="fa-solid fa-arrow-down"></i></p>
+                <p  data-aos="fade-down"
+                data-aos-duration="1500"><i class="fa-solid fa-arrow-down"></i></p>
                 </div>
 
         </article>
-        <div class="d-block d-lg-none mobile_our_service_image">
+        <div class="d-block d-lg-none mobile_our_service_image" data-aos="fade-right"
+        data-aos-duration="1500">
             <div></div>
             <img class="" src="https://media.istockphoto.com/photos/indian-man-using-laptop-computer-mobile-phone-working-freelance-picture-id1323167372?b=1&k=20&m=1323167372&s=170667a&w=0&h=Bo6pbFehiNYrfhsnDou-HaWRWzmXTxhgxZ3sIkYjxVo=" alt="">
         </div>
-        <article class="reasons_list">
+        <article class="reasons_list" data-aos="flip-right"
+        data-aos-duration="1500" >
                 <div>
                     <div class="list">
-                        <div>
+                        <div data-aos="fade-left"
+                        data-aos-duration="2100">
                             <span>01</span>
                         <p>Lorem ipsum, dolor sit amet consectetur</p>
                         </div>
-                        <div>
+                        <div data-aos="fade-left"
+                        data-aos-duration="2000">
                             <span>02</span>
                         <p>Lorem ipsum, dolor sit amet consectetur </p>
                         </div>
-                        <div class="list_pop">
+                        <div class="list_pop" data-aos="fade-left"
+                        data-aos-duration="1900">
                             <span>03</span>
                         <p>Lorem ipsum, dolor sit amet consectetur</p>
                         </div>
-                        <div>
+                        <div data-aos="fade-left"
+                        data-aos-duration="1800">
                             <span>04</span>
                         <p>Lorem ipsum, dolor sit amet consectetur </p>
                         </div>
-                        <div>
+                        <div data-aos="fade-left"
+                        data-aos-duration="1700">
                             <span>05</span>
                         <p>Lorem ipsum, dolor sit amet consectetur .</p>
                         </div>
-                        <div>
+                        <div data-aos="fade-left"
+                        data-aos-duration="1500">
                             <span>06</span>
                         <p>Lorem ipsum, dolor sit amet consectetur </p>
                         </div>
