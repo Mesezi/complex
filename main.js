@@ -103,3 +103,21 @@ listItems[popCount].classList.add('list_pop')
 popCount === 5 ? popCount = 0 : popCount++
 
 }, 3000); */
+
+let recentFirstPage = document.getElementById('recent_deal_first_page')
+let recentSecondPage = document.getElementById('recent_deal_second_page')
+let products = document.querySelectorAll('.products')
+
+recentFirstPage.addEventListener('click', ()=>{
+products[1].classList.remove('active_products')
+products[0].classList.add('active_products')
+recentSecondPage.classList.remove('active')
+recentFirstPage.classList.add('active')
+})
+
+recentSecondPage.addEventListener('click', ()=>{
+products[0].classList.remove('active_products')  
+products[1].classList.add('active_products')
+recentFirstPage.classList.remove('active')
+recentSecondPage.classList.add('active')
+})
