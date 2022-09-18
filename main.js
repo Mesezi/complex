@@ -91,7 +91,7 @@ heroSection.addEventListener('mouseleave', ()=>{
 })
     
 
-/*List Items Pop */
+/*List Items Pop 
 let popCount = 0
 let listItems = document.querySelector('.list').querySelectorAll('div')
 
@@ -102,4 +102,4 @@ listItems[popCount].classList.add('list_pop')
 
 popCount === 5 ? popCount = 0 : popCount++
 
-}, 3000);
+}, 3000); */
