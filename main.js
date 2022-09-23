@@ -76,20 +76,11 @@ count === 3 ? nextText[0].classList.add('show') : nextText[currentCount + 1].cla
 
 interval = setInterval(() => {
   nextCarousel()
-    }, 3000); 
+    }, 4000); 
 
 let heroSection = document.querySelector('.hero')
 
-heroSection.addEventListener('mouseenter', ()=>{
-    clearInterval(interval);
-})
 
-heroSection.addEventListener('mouseleave', ()=>{
-    interval = setInterval(() => {
-  nextCarousel()
-    }, 4000); 
-})
-    
 
 /*List Items Pop 
 let popCount = 0
@@ -131,3 +122,46 @@ recentSecondPage.classList.add('active')
 //     console.log('works')
 //     rangeText.innerText = range.value
 // })
+
+
+let typeBox = document.querySelector('.type')
+let typeDropDown = document.querySelector('.type_list')
+
+
+typeBox.addEventListener('mouseenter', ()=>{
+typeDropDown.classList.add('show')
+})
+
+typeBox.addEventListener('mouseleave', ()=>{
+    typeDropDown.classList.remove('show')
+})
+
+
+
+let selectOptions = document.querySelectorAll('.select_option')
+let selectedText = document.getElementById('selected_text')
+
+selectOptions.forEach(option=>{
+    option.addEventListener('click', ()=>{
+     selectedText.innerText = option.querySelector('p').innerText
+     selectOptions.forEach(elem=>{elem.style.backgroundColor= '#22273a'})
+     option.style.backgroundColor = '#0cd68e'
+    })
+})
+
+
+let priceRangeBtn = document.querySelectorAll('.price_range')
+
+priceRangeBtn.forEach(btn =>{
+    btn.addEventListener('mouseenter',()=>{
+        btn.classList.add('active_range')
+        btn.querySelector('div').classList.add('d-block')
+    })
+})
+
+priceRangeBtn.forEach(btn =>{
+    btn.addEventListener('mouseleave',()=>{
+        btn.classList.remove('active_range')
+        btn.querySelector('div').classList.remove('d-block')
+    })
+})

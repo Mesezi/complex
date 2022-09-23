@@ -419,6 +419,7 @@ div.next_image > .next_text span{
     grid-template-columns: 1fr 1fr 1fr 2fr 2fr;
     font-size: .9rem;
     font-weight: bold;
+    cursor: pointer;
 }
 
 .form_options .purchase_option{
@@ -436,7 +437,50 @@ div.next_image > .next_text span{
     padding: 1rem;
     color: white;
     align-items: center;
+    position: relative;
+    cursor: pointer;
 }
+
+.type_list{
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: var(--darkBlue);
+    min-width: 15rem;
+}
+
+.type_list.show{
+    display: flex;
+    flex-direction: column;
+}
+
+.type_list > div{
+    padding: 1.5rem 1rem;
+    border-bottom: rgb(65, 65, 65) 2px solid;
+}
+
+.type_list > div:hover{
+    background-color: #2d344f;
+}
+
+
+.type_list > div:hover .select{
+    display: flex;
+}
+
+.select{
+    display: none;
+    justify-content: space-between;
+    align-items:center;
+    gap: .3rem;
+    font-size: .8rem;
+}
+
+.select span{
+    color: var(--seaGreen);
+}
+
 
 input[type='radio']{
     filter: grayscale(1);
@@ -448,6 +492,33 @@ input[type='radio']{
     justify-content: space-between;
     padding: 1rem;
     background-color: var(--lightGray);
+    position: relative;
+}
+
+.form_options .price_range i{
+    transform: rotate(0deg);
+    transition: all ease-in-out 200ms;
+}
+
+.form_options .active_range > i{
+    transform: rotate(180deg);
+}
+
+.form_options .price_range > div{
+    display: none;
+    position: absolute;
+    top:100%;
+    left:0;
+    width: 100%;
+}
+
+.form_options .price_range > div > input{
+    width: 100%;
+    background-color: var(--lightGray);
+    color: black;
+    padding: 1rem;
+    border: 0;
+    outline: 0;
 }
 
 main{

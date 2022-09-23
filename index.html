@@ -76,7 +76,7 @@
               </div>
               </nav>
               
-              <div class="hero_text_container ps-2 ps-lg-0">
+              <div class="hero_text_container ps-4 ps-lg-0">
                   <div class="headings show"><h1>Real Service, <br> <span>Delivered</span></h1>
                       <p class="pe-5">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eos cum harum architecto esse repellat!</p>
                   </div>
@@ -119,12 +119,48 @@
                <div class="purchase_option"><input type="radio" id="rent" name="rent" value="buy">
                   <label for="rent">RENT</label></div>
               
-                  <p class="type">TYPE</p>
+                    <div class="type">
+                      <p id="selected_text">TYPE</p> 
+                      <div class="type_list"  data-aos-offset="100"  data-aos="zoom-in"
+                      data-aos-duration="1500">
+
+                        <div class="d-flex justify-content-between py-3 select_option"><p>Shop</p>
+                        <div class="select"><span>select</span>
+                            <i class="fa-solid fa-arrow-right"></i>
+                        </div>
+                    </div>
+
+                    <div class="d-flex justify-content-between py-3 select_option"><p>Office</p>
+                        <div class="select"><span>select</span>
+                            <i class="fa-solid fa-arrow-right"></i>
+                        </div>
+                    </div>
+
+                    <div class="d-flex justify-content-between py-3 select_option"><p>Industrial</p>
+                        <div class="select"><span>select</span>
+                            <i class="fa-solid fa-arrow-right"></i>
+                        </div>
+                    </div>
+
+                    <div class="d-flex justify-content-between py-3 select_option"><p>Residential</p>
+                        <div class="select"><span>select</span>
+                            <i class="fa-solid fa-arrow-right"></i>
+                        </div>
+                    </div>
+                    
+                      </div> 
+                    </div>
+                    
+                    
+                  
               
                  <div class="price_range">
                   <p>PRICE FROM</p>
                   <i class="fa-solid fa-chevron-down"></i>
+                  <div><input type="number" id="from" name="from" min="30000" step="500" placeholder="min: 30,000"></div>
                  </div>
+                 
+                 
                  <!--
                  <input type="range" id="points" name="points" min="0" max="100">
                  <p id="test" class="text-white"></p> -->
@@ -132,6 +168,7 @@
                  <div class="price_range">
                   <p>TO</p>
                   <i class="fa-solid fa-chevron-down"></i>
+                  <div><input type="number" id="from" name="from" max="250000" step="500" placeholder="max: 250,000"></div>
                  </div>
               </div>
               
@@ -296,10 +333,10 @@ data-aos-duration="1500">
                    <div><p>2,700,000</p></div> 
                 </div>
 
-                <div class="services_cards">
+                <div class="services_cards"  data-aos-offset="100"  data-aos="fade-left"
+                data-aos-duration="2500">
 
-                    <div data-aos-offset="100"  data-aos="zoom-in"
-                    data-aos-duration="1500">
+                    <div>
                        <div><span>01</span></div> 
                         <h3 class="m-0">Service</h3>
                         <p>Lorem ipsum, dolor sit amet consectetur 
@@ -307,8 +344,7 @@ data-aos-duration="1500">
                             </p>
                     </div>
 
-                    <div data-aos-offset="100"  data-aos="zoom-in"
-                    data-aos-duration="1500">
+                    <div>
                         <div><span>02</span></div> 
                          <h3 class="m-0">Service</h3>
                          <p>Lorem ipsum, dolor sit amet consectetur 
@@ -316,8 +352,7 @@ data-aos-duration="1500">
                              </p>
                      </div>
 
-                     <div data-aos-offset="100"  data-aos="zoom-in"
-                     data-aos-duration="1500">
+                     <div>
                         <div><span>03</span></div> 
                          <h3 class="m-0">Service</h3>
                          <p>Lorem ipsum, dolor sit amet consectetur 
@@ -344,9 +379,8 @@ data-aos-duration="1500">
             <div> <h3 class="m-0" data-aos-offset="100"  data-aos="fade-up"
                 data-aos-duration="1500">6 REASONS <br> WHY WE'RE SPECIAL!</h3></div>
                <div>
-                <p  data-aos-offset="100"  data-aos="fade-down"
-                data-aos-duration="1500"><i class="fa-solid fa-arrow-down" data-aos-offset="100"  data-aos="fade-down"
-                data-aos-duration="1900"></i></p>
+                <p data-aos-offset="100"  data-aos="fade-down"
+                data-aos-duration="1500"><i class="fa-solid fa-arrow-down"></i></p>
                 </div>
 
         </article>
